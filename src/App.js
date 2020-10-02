@@ -1,7 +1,26 @@
 import React from "react";
+import { createGlobalStyle } from "styled-components";
+import TodoHead from "./components/TodoHead";
+import TodoList from "./components/TodoList";
+import TodoTemplate from "./components/TodoTemplate";
+
+// 공통 스타일 정의
+const GlobalStyle = createGlobalStyle`
+  body { 
+    background: #e9ecef;
+  }
+`;
 
 function App() {
-  return <div></div>;
+  return (
+    <>
+      <GlobalStyle />
+      <TodoTemplate>
+        <TodoHead />
+        <TodoList />
+      </TodoTemplate>
+    </>
+  );
 }
 
 export default App;
