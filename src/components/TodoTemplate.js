@@ -18,6 +18,7 @@ const TodoTemplateBlock = styled.div`
   flex-direction: column;
 `;
 
+// Todo-List 템플릿 컴포넌트
 function TodoTemplate({ children }) {
   return <TodoTemplateBlock>{children}</TodoTemplateBlock>;
 }

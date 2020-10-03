@@ -28,6 +28,7 @@ const TodoHeadBlock = styled.div`
   }
 `;
 
+// 오늘의 날짜 및 해야할 일에 대한 컴포넌트
 function TodoHead() {
   return (
     <TodoHeadBlock>
